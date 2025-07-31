@@ -1,0 +1,39 @@
+---
+# For detailed instructions on using this file, visit:
+# https://aka.ms/alz/accelerator/docs
+
+# Basic Inputs
+iac_type: "terraform"
+bootstrap_module_name: "alz_azuredevops"
+starter_module_name: "platform_landing_zone"
+
+# Shared Interface Inputs
+bootstrap_location: "region"
+starter_locations: ["region"]
+root_parent_management_group_id: ""
+subscription_id_management: ""
+subscription_id_identity: ""
+subscription_id_connectivity: ""
+
+# Bootstrap Inputs
+azure_devops_personal_access_token: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+azure_devops_agents_personal_access_token: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+azure_devops_organization_name: "your_devops_org_name"
+use_separate_repository_for_templates: true
+bootstrap_subscription_id: "can_be_same_subscription_Id_as_management_subscription"
+service_name: ""
+environment_name: ""
+postfix_number: 1
+azure_devops_use_organisation_legacy_url: false
+azure_devops_create_project: true
+azure_devops_project_name: ""
+use_self_hosted_agents: true #make it true if you want private self hosted agents. This will deploy docker instances
+use_private_networking: true
+allow_storage_access_from_my_ip: false
+apply_approvers: [""]
+create_branch_policies: true
+
+# Advanced Inputs
+bootstrap_module_version: "latest"
+starter_module_version: "latest"
+#output_folder_path: "/accelerator/output"
