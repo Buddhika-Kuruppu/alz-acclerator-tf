@@ -1,3 +1,5 @@
+# This is the base template for tfvars and for your requirement need to remove/update uncessary variables
+
 custom_replacements = {
   names = {
     # Resource group names
