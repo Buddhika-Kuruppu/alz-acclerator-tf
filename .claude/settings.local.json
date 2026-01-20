@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "WebFetch(domain:azure.github.io)"
-    ],
-    "deny": [],
-    "ask": []
-  }
-}
